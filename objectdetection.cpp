@@ -76,7 +76,7 @@ int main() {
                 rectangle(frame, Point(left, top), Point(right, bottom), Scalar(0, 255, 0), 2);
 
                 // Draw label
-                string label = format("%s: %.1f%%", class_names[class_id].c_str(), confidence * 100);
+                string label = format("%s: %.1f%%", class_names[class_id].c_str(), confidence );
                 int baseLine;
                 Size labelSize = getTextSize(label, FONT_HERSHEY_SIMPLEX, 0.5, 1, &baseLine);
                 int y = max(top, labelSize.height + 10);
